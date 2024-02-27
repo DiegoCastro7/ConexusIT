@@ -55,8 +55,8 @@ public class ClienteController: BaseController
             {
                 return BadRequest();
             }
-            ClienteDto.Id = entidad.Id;
-            return CreatedAtAction(nameof(Post), new {id = ClienteDto.Id}, ClienteDto);
+            ClienteDto.Identificacion = entidad.Identificacion;
+            return CreatedAtAction(nameof(Post), new {id = ClienteDto.Identificacion}, ClienteDto);
         }
 
         [HttpPut("{id}")]

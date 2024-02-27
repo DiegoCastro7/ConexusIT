@@ -10,7 +10,7 @@ using Persistence.Data;
 
 namespace Application.Repository 
 { 
-    public class ClienteRepository : GenericRepository<Cliente> , ICliente 
+    public class ClienteRepository : GenericRepositoryString<Cliente> , ICliente 
     { 
         public ConexusITContext _context { get; set; } 
         public ClienteRepository(ConexusITContext context) : base(context) 

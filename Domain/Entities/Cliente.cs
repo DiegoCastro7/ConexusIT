@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Cliente : BaseEntity
+    public class Cliente : BaseEntityString
     {
         public string Identificacion { get; set; } = null!;
 
