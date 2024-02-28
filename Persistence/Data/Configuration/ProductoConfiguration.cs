@@ -12,11 +12,11 @@ namespace Persistence.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Producto> builder)
         {
-            builder.HasKey(e => e.Codigo).HasName("PRIMARY");
+            builder.HasKey(e => e.Identificacion).HasName("PRIMARY");
 
             builder.ToTable("producto");
 
-            builder.Property(e => e.Codigo)
+            builder.Property(e => e.Identificacion)
                 .HasMaxLength(10)
                 .HasColumnName("codigo");
             builder.Property(e => e.DescripcionTexto)

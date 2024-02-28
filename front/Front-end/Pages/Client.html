@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="../Field/bootstrap/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="../Src/Css/Main.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Bootstrap 5 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+<!-- Data Table CSS -->
+<link rel='stylesheet' href='https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel="stylesheet" href= 
+"https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" /> 
+  
+    <!--jQuery library file -->
+    <script type="text/javascript" 
+        src="https://code.jquery.com/jquery-3.5.1.js"> 
+    </script> 
+  
+    <!--Datatable plugin JS library file -->
+    <script type="text/javascript" 
+src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"> 
+    </script> 
+	<title>AdminSite</title>
+</head>
+<body>
+	<nav>
+        <div class="logo-name"><a style="display: flex;flex-direction: row; align-items: center;text-decoration: none;" href="/index.html">
+            <div class="logo-image">
+                <img src="../Src/Icon/Logo-min.png" alt="">
+            </div>
+
+            <span class="logo_name">Garden</span>
+        </a>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="/index.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="Databases.html">
+                    <i class="uil uil-database-alt"></i>
+                    <span class="link-name">Data Base</span>
+                </a></li>
+                <li><a href="Employee.html">
+                    <i class="uil uil-users-alt"></i>
+                    <span class="link-name">Employees</span>
+                </a></li>
+                <li><a href="Office.html">
+                    <i class="uil uil-building"></i>
+                    <span class="link-name">Office</span>
+                </a></li>
+                <li><a href="Client.html">
+                    <i class="uil uil-user-check"></i>
+                    <span class="link-name">Client</span>
+                </a></li>
+                <li><a href="Product.html">
+                    <i class="uil uil-shopping-bag"></i>
+                    <span class="link-name">Product</span>
+                </a></li>
+                <li><a href="Payment.html">
+                    <i class="uil uil-wallet"></i>
+                    <span class="link-name">Payment</span>
+                </a></li>
+                <li><a href="Order.html">
+                    <i class="uil uil-shopping-cart"></i>
+                    <span class="link-name">Order</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="Login.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+					<span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+				<div class="profile">
+					<a href="Profile.html">
+						<i class="uil uil-user" id="profile"></i>
+					</a>
+				</div>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-database"></i>
+                    <span class="text">Client</span>
+                </div>
+                <div class="card-body">
+                    <table id="example" class="table table-striped" style="width:100%">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+	<script src="../Field/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../Src/Js/table.js"></script>
+	<script src="../Src/Js/app.js"></script>
+    <script src="../Src/Js/table.js"></script>
+    
+</body>
+</html>

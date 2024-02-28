@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 namespace API.Dtos; 
     public class BaseDtoString
     { 
-        public string Id { get; set; } = null!;
+        public string Identificacion { get; set; } = null!;
     } 

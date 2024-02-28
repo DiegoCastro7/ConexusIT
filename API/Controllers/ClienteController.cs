@@ -33,7 +33,7 @@ public class ClienteController: BaseController
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<ClienteDto>> Get(int id)
+        public async Task<ActionResult<ClienteDto>> Get(string id)
         {
             var entidad = await _unitOfWork.Clientes.GetByIdAsync(id);
             if(entidad == null)
@@ -63,7 +63,7 @@ public class ClienteController: BaseController
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<ClienteDto>> Put(int id, [FromBody] ClienteDto ClienteDto)
+        public async Task<ActionResult<ClienteDto>> Put(string Identificacion, [FromBody] ClienteDto ClienteDto)
         {
             if(ClienteDto == null)
             {
@@ -78,7 +78,7 @@ public class ClienteController: BaseController
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(string id)
         {
             var entidad = await _unitOfWork.Clientes.GetByIdAsync(id);
             if(entidad == null)

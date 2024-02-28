@@ -8,7 +8,7 @@ namespace Domain.Interfaces
 {
     public interface IGenericString<T> where T : BaseEntityString
     {
-        Task<T> GetByIdAsync(int id);
+        Task<T> GetByIdAsync(string id);
         Task<IEnumerable<T>> GetAllAsync();
         Task<(int totalRegistros, IEnumerable<T> registros)> GetAllAsync(int pageindex, int pageSize);
         IEnumerable<T> Find(Func<T, bool> predicate);

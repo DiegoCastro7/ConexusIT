@@ -33,7 +33,7 @@ public class ProductoController: BaseController
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<ProductoDto>> Get(int id)
+        public async Task<ActionResult<ProductoDto>> Get(string id)
         {
             var entidad = await _unitOfWork.Productos.GetByIdAsync(id);
             if(entidad == null)
@@ -55,15 +55,15 @@ public class ProductoController: BaseController
             {
                 return BadRequest();
             }
-            ProductoDto.Id = entidad.Id;
-            return CreatedAtAction(nameof(Post), new {id = ProductoDto.Id}, ProductoDto);
+            ProductoDto.Identificacion = entidad.Identificacion;
+            return CreatedAtAction(nameof(Post), new {id = ProductoDto.Identificacion}, ProductoDto);
         }
 
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<ProductoDto>> Put(int id, [FromBody] ProductoDto ProductoDto)
+        public async Task<ActionResult<ProductoDto>> Put(string id, [FromBody] ProductoDto ProductoDto)
         {
             if(ProductoDto == null)
             {
@@ -78,7 +78,7 @@ public class ProductoController: BaseController
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(string id)
         {
             var entidad = await _unitOfWork.Productos.GetByIdAsync(id);
             if(entidad == null)

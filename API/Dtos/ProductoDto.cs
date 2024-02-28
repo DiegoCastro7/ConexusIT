@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks; 
 
 namespace API.Dtos; 
-    public class ProductoDto : BaseDto
+    public class ProductoDto : BaseDtoString
     { 
-
+        public string DescripcionTexto { get; set; } = null!;
     } 

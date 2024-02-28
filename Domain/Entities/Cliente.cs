@@ -8,7 +8,6 @@ namespace Domain.Entities
 {
     public class Cliente : BaseEntityString
     {
-        public string Identificacion { get; set; } = null!;
 
         public string Nombres { get; set; } = null!;
 

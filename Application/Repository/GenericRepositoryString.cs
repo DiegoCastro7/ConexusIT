@@ -57,7 +57,7 @@ namespace Api.Repository
             return (totalRegistros, registros);
         }
 
-        public virtual async Task<T> GetByIdAsync(int id)
+        public virtual async Task<T> GetByIdAsync(string id)
         {
             return await _context.Set<T>().FindAsync(id);
         }

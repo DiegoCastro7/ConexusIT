@@ -7,7 +7,7 @@ using Domain.Entities;
 
 namespace Domain.Interfaces
 { 
-    public interface IEmisor:IGeneric<Emisor> 
+    public interface IEmisor:IGenericString<Emisor> 
     {
 
     }

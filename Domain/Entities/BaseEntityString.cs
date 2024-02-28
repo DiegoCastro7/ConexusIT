@@ -7,6 +7,6 @@ namespace Domain.Entities
 {
     public class BaseEntityString
     {
-        public string Id { get; set; } = null!;
+        public string Identificacion { get; set; } = null!;
     }
 }

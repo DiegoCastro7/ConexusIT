@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Producto : BaseEntity
+    public class Producto : BaseEntityString
     {
-        public string Codigo { get; set; } = null!;
 
         public string DescripcionTexto { get; set; } = null!;
 

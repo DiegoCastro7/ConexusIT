@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferch\\Downloads\\ConexusIT\\API\\API.csproj": {}
+    "C:\\Users\\ferch\\Downloads\\ConexusIT\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferch\\Downloads\\ConexusIT\\API\\API.csproj": {
+    "C:\\Users\\ferch\\Downloads\\ConexusIT\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferch\\Downloads\\ConexusIT\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\ferch\\Downloads\\ConexusIT\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\ferch\\Downloads\\ConexusIT\\API\\API.csproj",
+        "projectPath": "C:\\Users\\ferch\\Downloads\\ConexusIT\\api\\API.csproj",
         "packagesPath": "C:\\Users\\ferch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferch\\Downloads\\ConexusIT\\API\\obj\\",
+        "outputPath": "C:\\Users\\ferch\\Downloads\\ConexusIT\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ferch\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -10,7 +10,7 @@ using Persistence.Data;
 
 namespace Application.Repository 
 { 
-    public class ProductoRepository : GenericRepository<Producto> , IProducto 
+    public class ProductoRepository : GenericRepositoryString<Producto> , IProducto 
     { 
         public ConexusITContext _context { get; set; } 
         public ProductoRepository(ConexusITContext context) : base(context) 

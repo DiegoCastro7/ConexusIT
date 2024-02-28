@@ -4,9 +4,8 @@ using System.Linq;
 using System.Threading.Tasks; 
 
 namespace API.Dtos; 
-    public class ClienteDto
+    public class ClienteDto : BaseDtoString
     { 
-        public string Identificacion { get; set; } = null!;
 
         public string Nombres { get; set; } = null!;
 

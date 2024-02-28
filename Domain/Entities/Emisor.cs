@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Emisor : BaseEntity
+    public class Emisor : BaseEntityString
     {
-        public string Identificacion { get; set; } = null!;
 
         public string RazonSocial { get; set; } = null!;
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mRuYWHWFnmqBj+6CDw1LqqB3fvnTjXHcP9sbGG5Z/DzH2AaIM7vFWFkL0O8Qp1p0ffsYjSOqAsYtBDPL4TdyAQ==",
+  "dgSpecHash": "nOfIrV59JcYwek45s3OXNxsrxDDbsCrT1QqL1r8Q66dkpDH4lqcMv4IqZ3cQSN4F17Q06XDUiOsxsJThpzTbbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ferch\\Downloads\\ConexusIT\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\ferch\\Downloads\\ConexusIT\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ferch\\.nuget\\packages\\aspnetcoreratelimit\\5.0.0\\aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "C:\\Users\\ferch\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",

@@ -8,7 +8,6 @@ namespace Domain.Entities
 {
     public class Factura : BaseEntity
     {
-        public int IdFactura { get; set; }
 
         public string IdCliente { get; set; } = null!;
 
